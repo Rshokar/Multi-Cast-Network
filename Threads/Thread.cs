@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _4945_A2.Threads
 {
-    internal interface Interface1
+    public interface Thread
     {
     }
 }

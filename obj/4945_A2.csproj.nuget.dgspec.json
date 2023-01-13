@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ravin\\Source\\Repos\\4945_A2\\4945_A2.csproj": {}
+    "C:\\Users\\Ravin\\source\\repos\\4945_A2\\4945_A2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ravin\\Source\\Repos\\4945_A2\\4945_A2.csproj": {
+    "C:\\Users\\Ravin\\source\\repos\\4945_A2\\4945_A2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ravin\\Source\\Repos\\4945_A2\\4945_A2.csproj",
+        "projectUniqueName": "C:\\Users\\Ravin\\source\\repos\\4945_A2\\4945_A2.csproj",
         "projectName": "4945_A2",
-        "projectPath": "C:\\Users\\Ravin\\Source\\Repos\\4945_A2\\4945_A2.csproj",
+        "projectPath": "C:\\Users\\Ravin\\source\\repos\\4945_A2\\4945_A2.csproj",
         "packagesPath": "C:\\Users\\Ravin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ravin\\Source\\Repos\\4945_A2\\obj\\",
+        "outputPath": "C:\\Users\\Ravin\\source\\repos\\4945_A2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

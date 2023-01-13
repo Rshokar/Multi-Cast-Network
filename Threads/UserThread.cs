@@ -9,7 +9,7 @@ namespace _4945_A2.Threads
 {
     public class UserThread : Thread
     {
-        N network = null;
+        N network;
 
         public UserThread(N network) {
             this.network = network;
