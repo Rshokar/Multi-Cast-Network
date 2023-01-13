@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
+using System.Threading;
 using GameThread = _4945_A2.Threads.GameThread;
 
 
 
 namespace _4945_A2.Network
 {
-    public abstract class Network
+    public abstract class Network 
     {
         private const int PORT = 8000; 
         private const string IP_ADDRESS = "";
@@ -19,6 +20,8 @@ namespace _4945_A2.Network
         private string ipAddress; 
         private GameThread gt;
         private byte[] buffer;
+
+        private Thread t;
 
         public Network(GameThread gt) {
             this.port = PORT; 
@@ -42,5 +45,19 @@ namespace _4945_A2.Network
             this.gt = gt;
             this.buffer = new byte[bufferSize];
         }
+
+        public void execute()
+        {
+            if (t == null)
+            {
+                throw new Exception("Error: thread already started.");
+            }
+
+            t = new Thread(receive);
+            t.Start();
+        }
+
+        private void receive() { }
+
     }
 }
