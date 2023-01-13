@@ -1,0 +1,15 @@
+C:\Users\m\source\repos\4945_A2\bin\Debug\net6.0\4945_A2.exe
+C:\Users\m\source\repos\4945_A2\bin\Debug\net6.0\4945_A2.deps.json
+C:\Users\m\source\repos\4945_A2\bin\Debug\net6.0\4945_A2.runtimeconfig.json
+C:\Users\m\source\repos\4945_A2\bin\Debug\net6.0\4945_A2.dll
+C:\Users\m\source\repos\4945_A2\bin\Debug\net6.0\4945_A2.pdb
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.csproj.AssemblyReference.cache
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.AssemblyInfoInputs.cache
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.AssemblyInfo.cs
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.csproj.CoreCompileInputs.cache
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.dll
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\refint\4945_A2.dll
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.pdb
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\4945_A2.genruntimeconfig.cache
+C:\Users\m\source\repos\4945_A2\obj\Debug\net6.0\ref\4945_A2.dll
