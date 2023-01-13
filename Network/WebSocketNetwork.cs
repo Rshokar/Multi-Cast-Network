@@ -15,5 +15,8 @@ namespace _4945_A2.Network
 
         public WebSocketNetwork(int port, string ipAddress, GameThread gt) : base(port, ipAddress, gt) { }
 
+        public WebSocketNetwork(int port, string ipAddress, GameThread gt, int bufferSize) : base(port, ipAddress, gt, bufferSize) { }
+
+
     }
 }

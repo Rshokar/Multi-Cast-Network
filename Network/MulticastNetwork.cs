@@ -18,5 +18,8 @@ namespace _4945_A2.Network
 
         public MulticastNetwork(int port, string ipAddress, GameThread gt) : base(port, ipAddress, gt) { }
 
+
+        public MulticastNetwork(int port, string ipAddress, GameThread gt, int bufferSize) : base(port, ipAddress, gt, bufferSize) { }
+
     }
 }

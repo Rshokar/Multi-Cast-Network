@@ -13,18 +13,30 @@ namespace Program {
     public class Program
     {
 
-        public static void testOne()
+        public static void testOneM()
+        {
+            Game g = new Game();
+            Network n = new MultiCast(g);
+            User u = new User(n);
+        }
+        public static void testTwoM()
         {
         }
-        public static void testTwo()
+        public static void testThreeM()
         {
         }
-        public static void testThree()
-        {
+
+        public static void testMulti() {
+            testOneM();
+            testTwoM();
+            testThreeM();
         }
         public static void Main(string[] args)
         {
 
+            testMulti();
+
+            testWeb();
         }
     }
 }
