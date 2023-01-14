@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
+using System.Net;
 using System.Text;
 //using System.Threading.Tasks;
 using System.Threading;
@@ -22,6 +24,9 @@ namespace _4945_A2.Network
         private byte[] buffer;
 
         private Thread t;
+
+        public IPAddress mcastAddress;
+        public Socket mcastSocket;
 
         public Network(GameThread gt) {
             this.port = PORT; 
@@ -46,6 +51,16 @@ namespace _4945_A2.Network
             this.buffer = new byte[bufferSize];
         }
 
+        public int GetPort()
+        {
+            return port;
+        }
+
+        public string GetIPAddress()
+        {
+            return ipAddress;
+        }
+
         public void execute()
         {
             if (t != null)
@@ -57,11 +72,9 @@ namespace _4945_A2.Network
             t.Start();
         }
 
-        private void receive() { }
+        protected abstract void receive();
 
-        public void send(P packet) {
-            Console.WriteLine(packet.toString()); 
-        }
+        public abstract void send(P packet);
 
     }
 }

@@ -109,7 +109,7 @@ namespace _4945_A2.Packet
             data[5] = val3;
         }
 
-        public string toString() {
+        public override string ToString() {
             string result = "";
 
             for (int i = 0; i < data.Length; i++) {
@@ -117,6 +117,10 @@ namespace _4945_A2.Packet
             }
 
             return result;
+        }
+
+        public byte[] GetBuffer() {
+            return this.data;
         }
 
     }
