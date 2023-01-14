@@ -15,13 +15,13 @@ namespace _4945_A2.Network
     public abstract class Network 
     {
         private const int PORT = 8000; 
-        private const string IP_ADDRESS = "";
+        private const string IP_ADDRESS = "230.0.0.1";
         private const int BUFFER_SIZE = 100; 
 
         private int port;
         private string ipAddress; 
         private GameThread gt;
-        private byte[] buffer;
+        protected byte[] buffer;
 
         private Thread t;
 
@@ -61,7 +61,17 @@ namespace _4945_A2.Network
             return ipAddress;
         }
 
-        public void execute()
+        public virtual void setup()
+        {
+            mcastAddress = IPAddress.Parse(this.GetIPAddress());
+
+            mcastSocket = new Socket(AddressFamily.InterNetwork,
+                                     SocketType.Dgram,
+                                     ProtocolType.Udp);
+
+        }
+
+        public virtual void execute()
         {
             if (t != null)
             {
@@ -70,6 +80,7 @@ namespace _4945_A2.Network
 
             t = new Thread(receive);
             t.Start();
+            Console.WriteLine("EXECUTE");
         }
 
         protected abstract void receive();
