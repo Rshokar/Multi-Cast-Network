@@ -19,7 +19,7 @@ namespace _4945_A2.Network
         private int port;
         private string ipAddress; 
         private GameThread gt;
-        private byte[] buffer;
+        protected byte[] buffer;
 
         private Thread t;
 
@@ -46,6 +46,16 @@ namespace _4945_A2.Network
             this.buffer = new byte[bufferSize];
         }
 
+        public int GetPort()
+        {
+            return port;
+        }
+
+        public string GetIPAddress()
+        {
+            return ipAddress;
+        }
+
         public void execute()
         {
             if (t != null)
@@ -55,13 +65,12 @@ namespace _4945_A2.Network
 
             t = new Thread(receive);
             t.Start();
+            Console.WriteLine("EXECUTE");
         }
 
-        private void receive() { }
+        protected abstract void receive();
 
-        public void send(P packet) {
-            Console.WriteLine(packet.toString()); 
-        }
+        public abstract void send(P packet);
 
     }
 }
