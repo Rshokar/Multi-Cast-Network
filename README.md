@@ -14,6 +14,10 @@ This application creates an instance of the Multicast Network, which sets up the
 
 One of the main challenges encountered during this project was comprehending the network's design. Initially, it was difficult to realize that there is no single host, as each connection results in a new host capable of listening to and receiving data. Furthermore, understanding that using "localhost" as the IP address was incorrect and that Multicast Networks belong to Class D, with a range of IP addresses from 224.0.0.0 to 239.255.255.255.
 
+To explore the functionality, follow the instructions below, which will involve opening multiple terminals. One terminal will serve as the sending host, while the other will act as the listener. The sender terminal will transmit packets on the network, and both the sender and receiver terminals will be able to receive the packets.
+
+![image](https://github.com/Rshokar/Multi-Cast-Network/assets/60485121/7215fa41-a5ef-4d41-b1ea-87dfcc9de706)
+
 ## <a id="technologies-used">Technologies Used</a>
 #### Languages
 - C#
@@ -24,10 +28,7 @@ One of the main challenges encountered during this project was comprehending the
 To get started with the project, make sure you have the following:
 
 - Git and GitHub account
-- Python installed
-- Pip installed
-- Npx installed
-- Expo installed
+- Visual Studio Code is installed
 
 ### Cloning the repository:
 
@@ -37,42 +38,27 @@ To get started with the project, make sure you have the following:
 
 ### Running the project:
 
-#### 1.Running API Test
-1. Open Command Prompt
-2. `cd` into the folder where the code is stored
-3. Type: `cd trucking-app-flask`
-4. Type: `.venv\Scripts\activate`
-5. (.venv) should appear on the left side command line line. 
-6. Type: `pip install -r requirements.txt`
-7. packages should be installed
-8. Type: `cd tests`
-9. Type: `pytest`
+#### 1.Compiling The project
+1. Open `Developer Command Promt for VS 2022`
+2. Navigate to the folder where the code is stored.
+3. Type: `csc Threads\Thread.cs Threads\GameThread.cs Threads\UserThread.cs Packet\Packet.cs Network\Network.cs Network\MulticastNetwork.cs Program.cs`
 
-#### 2.Running The API 
-1. Open Command Prompt
-2. `cd` into the folder where the code is stored
-3. Type: `cd trucking-app-flask`
-4. Type: `.venv\Scripts\activate`
-5. (.venv) should appear on the left side command line line. 
-6. Type: `pip install -r requirements.txt`
-7. packages should be installed
-8. Type: `python -m flask run`
+#### 1.5 Running The Project
+1. Create a Listener
+2. Create a Sender
 
-#### 3.Running The Client
-1. Open Command Prompt
-2. `cd` into the folder where the code is stored
-3. Type: `cd trucking-app-client`
-4. Type: `npx expo install`
-5. Type: `npx expo start`
-<br>
+#### 2.Create Listener
+1. Open `Developer Command Promt for VS 2022`
+2. Navigate to the folder where the code is stored.
+3. Type: `Program.exe Listener`
+4. You will see the message "Network Listening" displayed.
 
-## <a id="how-to-use-product">How to use the product (Features)</a>
-
-### Features
-
-#### API (TO-DO)
-
-#### Client (TO-DO)
+#### 3.Create Sender
+1. Open `Developer Command Promt for VS 2022`
+2. Navigate to the folder where the code is stored.
+3. Type: `Program.exe`
+4. You will see `Execute` will appear in the terminal
+5. After a brief pause the packets sent and recieved are printed on the screen
 
 ## <a id="contact-information">Contact Information</a>
 
